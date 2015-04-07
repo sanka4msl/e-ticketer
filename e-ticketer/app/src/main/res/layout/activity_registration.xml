@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".registration">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Registration Form"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/reg_pass"
+        android:layout_below="@+id/confirm_e_mail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/con_pass"
+        android:layout_below="@+id/reg_pass"
+        android:layout_alignLeft="@+id/reg_pass"
+        android:layout_alignStart="@+id/reg_pass" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:id="@+id/registration_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="User Name"
+        android:id="@+id/name"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_alignBottom="@+id/reg_user"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_user"
+        android:text="username"
+        android:layout_weight="0.59"
+        android:layout_alignRight="@+id/registration_button"
+        android:layout_alignEnd="@+id/registration_button"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Full Name"
+        android:id="@+id/full_name"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/full_name"
+        android:layout_below="@+id/reg_user"
+        android:layout_alignLeft="@+id/reg_user"
+        android:layout_alignStart="@+id/reg_user"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="NIC No"
+        android:id="@+id/nic_no"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/full_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_no"
+        android:layout_below="@+id/nic_no"
+        android:layout_alignLeft="@+id/full_name"
+        android:layout_alignStart="@+id/full_name"
+        android:layout_alignRight="@+id/full_name"
+        android:layout_alignEnd="@+id/full_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Contact No"
+        android:id="@+id/contact_no"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/nic_no"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="E-mail"
+        android:id="@+id/e_mail"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/contact_no"
+        android:layout_alignRight="@+id/nic_no"
+        android:layout_alignEnd="@+id/nic_no"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Confirm E-mail"
+        android:id="@+id/confirm_e_mail"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/e_mail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Password"
+        android:id="@+id/password"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/confirm_e_mail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Confirm Password"
+        android:id="@+id/confirm_password"
+        android:layout_weight="0.15"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_e_mail"
+        android:layout_above="@+id/reg_pass"
+        android:layout_alignRight="@+id/reg_pass"
+        android:layout_alignEnd="@+id/reg_pass"
+        android:layout_alignLeft="@+id/reg_pass"
+        android:layout_alignStart="@+id/reg_pass" />
+
+</RelativeLayout>
